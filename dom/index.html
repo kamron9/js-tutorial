@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px 20px;
+        border: 1px solid gray;
+      }
+      .nav__link:not(:last-child) {
+        margin-right: 10px;
+      }
+      .main {
+        display: flex;
+      }
+      .section-1,
+      .section-2 {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1 id="title" class="title" data-custom="test" data-v-number="1.0">
+        title
+      </h1>
+      <nav class="nav">
+        <a class="nav__link" href="#">home</a>
+        <a class="nav__link" href="#">about</a>
+        <a class="nav__link" href="#">contact</a>
+      </nav>
+      <button>login</button>
+    </header>
+    <main class="main">
+      <section class="section-1">
+        <h1>section 1</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section class="section-2">
+        <h1>section 2</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
